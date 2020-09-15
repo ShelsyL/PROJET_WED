@@ -4,6 +4,9 @@
 	ROUTEUR PRINCIPAL
 */
 
-// Pour tester et tout fonctionne :)
-$content = "<h1>Coucou</h1>";
-$title = "Hello";
+// ROUTE PAR DEFAUT
+ // PATTERN : /
+ // CTRL: postsControleur
+ // ACTION: index
+ include_once '../app/controleurs/postsControleur.php';
+ \App\Controleurs\PostsControleur\indexAction($connexion); // On lance l'action indexAction avec des namespaces
