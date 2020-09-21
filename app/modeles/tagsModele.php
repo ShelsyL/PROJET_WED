@@ -5,13 +5,28 @@
 namespace App\Modeles\TagsModele;
 
 /**
+ * [findAll description]
+ * @param  PDO   $connexion [description]
+ * @return array            [description]
+ */
+
+function findAll(\PDO $connexion) :array {
+	$sql = "SELECT *
+    		  FROM tags
+			    ORDER BY name ASC;";
+  $rs = $connexion->query($sql);
+  return $rs->fetchAll(\PDO::FETCH_ASSOC); // On retourne un tableau indéxé de tableau associatif
+}
+
+
+/**
  * [findAllByPostId description]
  * @param  PDO   $connexion [description]
  * @param  int   $postid    [description]
  * @return array            [description]
  */
 
-function findAllByPostId (\PDO $connexion, int $postId) :array {
+function findAllByPostId(\PDO $connexion, int $postId) :array {
 	$sql = "SELECT *
     		  FROM tags t
           JOIN posts_has_tags pht ON t.id = pht.tag_id

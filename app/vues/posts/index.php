@@ -19,7 +19,7 @@
     <article class="blog_item">
         <div class="blog_item_img">
             <img class="card-img rounded-0" src="assets/img/blog/<?php echo $post['image'] ?>" alt="">
-            <!-- Pourquoi ce lien, il ne mene null part  -->
+            <!-- <a href="posts/<?php // echo $post['id']; ?>/<?php // echo \Noyau\Fonctions\slugify($post['title']); ?>" class="blog_item_date"  -->
             <a href="#" class="blog_item_date">
                 <h3><?php echo date('d', $created_at) ?></h3>
                 <p><?php echo date('M', $created_at) ?></p>
