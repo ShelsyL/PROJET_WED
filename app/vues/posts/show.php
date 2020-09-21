@@ -1,8 +1,9 @@
 <?php
 /*
-	./app/vues/posts/sh.php
+	./app/vues/posts/show.php
 	Variables disponibles :
     	- $post : ARRAY(id, title, content, created_at, image, author_id, categorie_id)
+      - $author: ARRAY(id, firstname, lastname, biography, avatar, created_at)
 */
 ?>
 <div class="single-post">
@@ -19,20 +20,11 @@
       // On lance (la liste des tags qui correspondent au post) l'action indexByPostIdAction (index, car c'est une liste de chose mais par PostID)
         \App\Controleurs\TagsControleur\indexByPostIdAction($connexion, $post['id']); // On lui balance la connexion et le postId
       ?>
-      
+
       <p class="excert"><?php echo $post['content'] ?></p>
    </div>
 </div>
 
-<div class="blog-author">
-   <div class="media align-items-center">
-      <img src="assets/img/blog/author.png" alt="">
-      <div class="media-body">
-         <a href="#">
-            <h4>Harvard milan</h4>
-         </a>
-         <p>Second divided from form fish beast made. Every of seas all gathered use saying you're, he
-            our dominion twon Second divided from</p>
-      </div>
-   </div>
-</div>
+  <!-- AUTHOR DETAILS -->
+  <!-- On va mettre un include directement de la vue -->
+    <?php include '../app/vues/authors/show.php'; ?>
