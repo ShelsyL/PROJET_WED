@@ -1,6 +1,6 @@
 <?php
 /*
-	./app/vues/posts/index.php
+	./app/vues/posts/sh.php
 	Variables disponibles :
     	- $post : ARRAY(id, title, content, created_at, image, author_id, categorie_id)
 */
@@ -12,9 +12,14 @@
    <div class="blog_details">
       <h2><?php echo $post['title'] ?></h2>
 
-      <ul class="blog-info-link mt-3 mb-4">
-         <li><a href="#"><i class="fa fa-user"></i> Travel, Lifestyle</a></li>
-      </ul>
+      <!-- TAGS LIST -->
+        <?php
+       // On inclus le controleur tags
+        include_once '../app/controleurs/tagsControleur.php';
+      // On lance (la liste des tags qui correspondent au post) l'action indexByPostIdAction (index, car c'est une liste de chose mais par PostID)
+        \App\Controleurs\TagsControleur\indexByPostIdAction($connexion, $post['id']); // On lui balance la connexion et le postId
+      ?>
+      
       <p class="excert"><?php echo $post['content'] ?></p>
    </div>
 </div>

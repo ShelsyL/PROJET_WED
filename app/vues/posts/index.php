@@ -31,9 +31,25 @@
                 <h2><?php echo $post['title'] ?></h2>
             </a>
             <p><?php echo $post['content'] ?></p>
-            <ul class="blog-info-link">
-                <li><a href="#"><i class="fa fa-user"></i><?php echo $post['categorie_name'] ?></a></li>
-            </ul>
+
+            <!-- <ul class="blog-info-link">
+                <li>
+                  <a href="#">
+                    <?php //foreach ($tags as $tag): ?>
+                       <i class="fa fa-user"></i><?php //echo $tag['name']; ?>
+                    <?php //endforeach; ?>
+                  </a>
+                </li>
+            </ul> -->
+
+            <!-- TAGS LIST -->
+              <?php
+             // On inclus le controleur tags
+              include_once '../app/controleurs/tagsControleur.php';
+            // On lance (la liste des tags qui correspondent au post) l'action indexByPostIdAction (index, car c'est une liste de chose mais par PostID)
+              \App\Controleurs\TagsControleur\indexByPostIdAction($connexion, $post['id']); // On lui balance la connexion et le postId
+            ?>
+
         </div>
     </article>
   <?php endforeach; ?>
