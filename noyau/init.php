@@ -9,3 +9,7 @@
 
   // 2. CONNEXION - On charge la connexion
 	require_once '../noyau/connexion.php';
+
+require_once '../noyau/fonctions.php';
+
+require_once '../noyau/constantes.php';

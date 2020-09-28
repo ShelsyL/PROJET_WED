@@ -12,19 +12,23 @@ RewriteEngine on
 # ROUTES
 #--------------------------------------------------
 
+# NOTES
+## Un slug c'est la version du titre tt en minuscule et sans espace ou tout les caractères spéciaux sont remplacé par un tiret
+## [a-z0-9] => on a d'abord une lettre en minuscule de a à z
+##[a-z0-9\-] puis comme 2ème caractère on peut avoir une minuscule de a à z ou un chiffre de 0 à 9 ou un "-".
+## * => 0 ou plusieurs (optionnel)
 
-# ROUTE des posts
+
+# ROUTE D'UN POST
 # PATTERN: posts/id/slug.html (titre = Article 1) => (slug: article-1)
-# URL: page3.php?id=x
-# Un slug c'est la version du titre tt en minuscule et sans espace ou tout les caractères spéciaux sont remplacé par un tiret
-
-RewriteRule ^posts\/([1-9][0-9]*)\/[a-z0-9][a-z0-9\-]*.html$ index.php?id=$1 [L]
+# URL: post.php?ID=x
+RewriteRule ^posts\/([1-9][0-9]*)\/[a-z0-9][a-z0-9\-]*$ index.php?postId=$1 [L]
 
 
-# [a-z0-9] => on a d'abord une lettre en minuscule de a à z
-# [a-z0-9\-] puis comme 2ème caractère on peut avoir une minuscule de a à z ou un chiffre de 0 à 9 ou un "-".
-# * => 0 ou plusieurs (optionnel)
-
+# FORMULAIRE DE CONNEXION AU BACKOFFICE
+# PATTERN: users/login
+# VERS: index.php?user=login
+RewriteRule ^users\/login$ index.php?users=loginForm [L]
 
 
 # --------------------------------------------------
