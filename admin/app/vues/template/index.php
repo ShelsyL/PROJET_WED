@@ -1,6 +1,6 @@
 <?php
 /*
-	.app/vues/template/index.php
+	./admin/app/vues/template/index.php
 	TEMPLATE PRINCIPAL
 */
 ?>
@@ -14,6 +14,9 @@
 </head>
 <body>
   <h1>Ceci est le BackOffice</h1>
-
+  <!-- On ajoute le div (voir ci dessous) -->
+<div class="">
+<a href="user/logout">Se déconnecter</a>
+  </div>
 </body>
 </html>
