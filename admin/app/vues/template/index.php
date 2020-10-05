@@ -1,23 +1,18 @@
-<?php
-/*
-	./admin/app/vues/template/index.php
-	TEMPLATE PRINCIPAL
-*/
-?>
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <base href="<?php echo BASE_URL_ADMIN; ?>" target="_top">
-  <title>Document</title>
-</head>
-<body>
-  <h1>Ceci est le BackOffice</h1>
-  <!-- On ajoute le div (voir ci dessous) -->
-<div class="">
-<a href="user/logout">Se déconnecter</a>
-  </div>
-</body>
+  <head>
+    <?php include '../app/vues/template/partials/_head.php'; ?>
+  </head>
+
+  <body>
+
+    <?php include '../app/vues/template/partials/_nav.php'; ?>
+
+    <div class="container theme-showcase" role="main">
+      <?php echo $content; ?>
+    </div>
+
+    <?php include '../app/vues/template/partials/_scripts.php'; ?>
+
+  </body>
 </html>
