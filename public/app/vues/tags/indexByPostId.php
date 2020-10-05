@@ -1,6 +1,6 @@
 <?php
 /*
-	./app/vues/posts/indexByPostId.php
+	./public/app/vues/posts/indexByPostId.php
     Variables disponibles :
     	- $tags: ARRAY(ARRAY(id, name))
 */

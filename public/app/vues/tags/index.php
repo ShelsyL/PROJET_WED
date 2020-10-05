@@ -1,6 +1,6 @@
 <?php
 /*
-	./app/vues/tags/index.php
+	./public/app/vues/tags/index.php
     Variables disponibles :
     	- $tags: ARRAY(ARRAY(id, name))
 */

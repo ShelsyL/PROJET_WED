@@ -1,6 +1,6 @@
 <?php
 /*
-  ./app/vues/users/loginForm.php
+  ./public/app/vues/users/loginForm.php
  */
 ?>
 <div class="">

@@ -1,6 +1,6 @@
 <?php
 /*
-	./app/controleurs/postsControleur.php
+	./public/app/controleurs/postsControleur.php
 */
 
 namespace App\Controleurs\PostsControleur;

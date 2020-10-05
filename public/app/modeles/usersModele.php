@@ -1,6 +1,6 @@
 <?php
 /*
-  ./app/modeles/usersModele.php
+  ./public/app/modeles/usersModele.php
  */
   namespace App\Modeles\UsersModele;
 

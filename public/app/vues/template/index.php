@@ -1,7 +1,7 @@
 <?php
 /*
-	.app/vues/template/index.php
-	TEMPLATE PRINCIPAL
+  	./public/app/vues/template/index.php
+  	TEMPLATE PRINCIPAL
 */
 ?>
 <!doctype html>

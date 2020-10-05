@@ -1,6 +1,6 @@
 <?php
 /*
-	./www/index.php
+	./public/www/index.php
     DISPATCHER CENTRAL
 */
 // Le role du dispatcher est de charger ...

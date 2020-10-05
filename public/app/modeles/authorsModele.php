@@ -1,6 +1,6 @@
 <?php
 /*
-	./app/modeles/authorsModele.php
+	./public/app/modeles/authorsModele.php
 */
 namespace App\Modeles\AuthorsModele;
 

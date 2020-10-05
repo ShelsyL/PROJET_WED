@@ -1,6 +1,6 @@
 <?php
 /*
-  ./app/vues/authors/show.php
+  ./public/app/vues/authors/show.php
   Variables disponibles :
   - $authors: ARRAY(id, firstname, lastname, avatar, biography)
 */

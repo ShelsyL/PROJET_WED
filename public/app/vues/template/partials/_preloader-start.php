@@ -1,6 +1,6 @@
 <?php
 /*
-	./app/vues/template/partials/_preloader-start.php
+	./public/app/vues/template/partials/_preloader-start.php
 */
 ?>
 

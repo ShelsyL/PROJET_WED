@@ -1,6 +1,6 @@
 <?php
 /*
-  ./app/routeurs/users.php
+  ./public/app/routeurs/users.php
   ROUTES DES USERS
     $_GET['users']
  */

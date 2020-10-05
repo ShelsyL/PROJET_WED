@@ -1,6 +1,6 @@
 <?php
 /*
-	./app/modeles/tagsModele.php
+	./public/app/modeles/tagsModele.php
 */
 namespace App\Modeles\TagsModele;
 

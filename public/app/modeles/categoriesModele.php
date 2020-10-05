@@ -1,6 +1,6 @@
 <?php
 /*
-	./app/modeles/categoriesModele.php
+	./public/app/modeles/categoriesModele.php
 */
 namespace App\Modeles\CategoriesModele;
 

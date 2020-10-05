@@ -1,6 +1,6 @@
 <?php
 /*
- ./noyau/fonctions.php
+ ./public/noyau/fonctions.php
 */
 namespace Noyau\Fonctions;
 

@@ -1,6 +1,6 @@
 <?php
 /*
-	./app/config/parametres.php
+	./public/app/config/parametres.php
     PARAMETRES DE L'APPLICATION
 */
 

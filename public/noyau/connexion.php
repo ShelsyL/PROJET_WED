@@ -1,7 +1,7 @@
 <?php
 
 /*
-	./noyau/connexion.php
+	./public/noyau/connexion.php
   Paramètres de connexion
 	CREATION D'UNE INSTANCE PDO $connexion
 */

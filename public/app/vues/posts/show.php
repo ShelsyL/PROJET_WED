@@ -1,6 +1,6 @@
 <?php
 /*
-	./app/vues/posts/show.php
+	./public/app/vues/posts/show.php
 	Variables disponibles :
     	- $post : ARRAY(id, title, content, created_at, image, author_id, categorie_id)
       - $author: ARRAY(id, firstname, lastname, biography, avatar, created_at)

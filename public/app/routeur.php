@@ -1,6 +1,6 @@
 <?php
 /*
-	./app/routeur.php
+	./public/app/routeur.php
 	ROUTEUR PRINCIPAL
 */
 // var_dump($_GET['postId']);

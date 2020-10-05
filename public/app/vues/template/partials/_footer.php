@@ -1,6 +1,6 @@
 <?php
 /*
-	./app/vues/template/partials/_footer.php
+	./public/app/vues/template/partials/_footer.php
 */
 ?>
 
