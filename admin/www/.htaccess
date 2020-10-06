@@ -17,9 +17,20 @@ RewriteEngine on
 #--------------------------------------------------
 # ROUTES DES CATEGORIES
 #--------------------------------------------------
+    # LISTE DES CATEGORIES
     # PATTERN: categories
     # VERS: index.php?categories=index
     RewriteRule ^categories$ index.php?categories=index [L]
+
+    # AJOUT CATEGORIES : FORMULAIRE
+    # PATTERN: categories/add/form
+    # VERS: index.php?categories=addForm
+    RewriteRule ^categories\/add\/form$ index.php?categories=addForm [L]
+
+    # AJOUT CATEGORIES : INSERT - Pour le slug
+    # PATTERN: categories/add/insert
+    # VERS: index.php?categories=add
+    RewriteRule ^categories\/add\/insert$ index.php?categories=add [L]
 
 
 #--------------------------------------------------

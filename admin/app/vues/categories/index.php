@@ -10,7 +10,7 @@
    <p>This is a template showcasing the optional theme stylesheet included in Bootstrap. Use it as a starting point to create something more unique by building on or modifying it.</p>
  </div>
  <div class="">
-     <a href="#">Add a category</a>
+     <a href="categories/add/form">Add a category</a>
  </div>
  <table class="table table-striped">
    <thead>

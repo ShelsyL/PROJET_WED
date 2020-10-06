@@ -4,7 +4,6 @@
 	ROUTEUR PRINCIPAL
 */
 
-
 if (isset($_GET['categories'])) :
  include_once '../app/routeurs/categories.php';
 
