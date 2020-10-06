@@ -14,8 +14,18 @@ RewriteEngine on
 # ROUTES
 #--------------------------------------------------
 
-# ROUTES DU USER --------------------------------
-	# LOGOUT
+#--------------------------------------------------
+# ROUTES DES CATEGORIES
+#--------------------------------------------------
+    # PATTERN: categories
+    # VERS: index.php?categories=index
+    RewriteRule ^categories$ index.php?categories=index [L]
+
+
+#--------------------------------------------------
+# ROUTE DU USER
+#--------------------------------------------------
+	# DECONNEXION DU USER / LOGOUT
     # PATTERN/ user/logout
     # URL: index.php?user=logout
     RewriteRule ^user\/logout$ index.php?user=logout [L]

@@ -12,7 +12,7 @@
 <base href="<?php echo BASE_URL_ADMIN; ?>" target="_top">
 <link rel="icon" href="../../favicon.ico">
 
-<title>Theme Template for Bootstrap</title>
+<title><?php echo $title ?></title>
 
 <!-- Bootstrap core CSS -->
 <!-- Font Awesome -->

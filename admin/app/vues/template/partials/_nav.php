@@ -22,7 +22,7 @@
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Gestion <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li class="dropdown-header">Categéories</li>
-            <li><a href="#">Liste des catégories</a></li>
+            <li><a href="categories">Liste des catégories</a></li>
             <li><a href="#">Ajouter une catégorie</a></li>
             <li role="separator" class="divider"></li>
             <li class="dropdown-header">Tags</li>
