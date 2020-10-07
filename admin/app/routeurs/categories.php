@@ -35,4 +35,11 @@
          ]);
          break;
 
+         case 'delete':
+         // SUPPRESION CATEGORIE
+         // PATTERN: index.php?categories=delete&id=x
+         // CTRL: catgeoriesControleur
+         // ACTION: delete
+           CategoriesControleur\deleteAction($connexion, $_GET['id']);
+           break;
 }

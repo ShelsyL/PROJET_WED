@@ -29,8 +29,9 @@
          <td><?php echo $categorie['name']; ?></td>
          <td><?php echo $categorie['created_at']; ?></td>
          <td>
-           <a href="#">Edit</a> |
-           <a href="#">Delete</a>
+           <!-- On met une class pour pouvoir faire une confirmation avec le fichier public/www/js/app.js -->
+           <a href="categories/edit/<?php echo $categorie['id']; ?>"    class="edit">Edit</a> | <!-- Besoin d'un id pour savoir lequel editer -->
+           <a href="categories/delete/<?php echo $categorie['id']; ?>"  class="delete">Delete</a> <!-- Besoin d'un id pour savoir lequel supprimer -->
          </td>
        </tr>
      <?php endforeach; ?>
