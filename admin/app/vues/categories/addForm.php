@@ -1,6 +1,6 @@
 <?php
 /*
-  ./app/vues/categories/addForm.php
+  ./admin/app/vues/categories/addForm.php
   Variables disponibles: /
  */
  ?>

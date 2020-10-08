@@ -35,7 +35,17 @@ RewriteEngine on
     # SUPPRESION CATEGORIES
     # PATTERN: categories/delete/x
     # VERS: index.php?categories=delete&id=x
-    RewriteRule ^categories\/delete\/([1-9][0-9])$ index.php?categories=delete&id=$1 [L]
+    RewriteRule ^categories\/delete\/([1-9][0-9]*)$ index.php?categories=delete&id=$1 [L]
+
+    # MODIFICATION D'UNE CATEGORIES: FORMULAIRE (on va sur le formulaire de modification)
+    # PATTERN: categories/edit/form/x
+    # VERS: index.php?categories=editForm&id=x
+    RewriteRule ^categories\/edit\/form\/([1-9][0-9]*)$ index.php?categories=editForm&id=$1 [L]
+
+    # MODIFICATION D'UNE CATEGORIES: UPDATE (on envois la mofication dans le formulaire général)
+    # PATTERN: categories/edit/x
+    # VERS: index.php?categories=edit&id=x
+    RewriteRule ^categories\/edit\/([1-9][0-9]*)$ index.php?categories=edit&id=$1 [L]
 
 
 #--------------------------------------------------

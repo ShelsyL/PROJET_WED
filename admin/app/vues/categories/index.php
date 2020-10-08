@@ -1,6 +1,6 @@
 <?php
 /*
-  ./app/vues/categories/index.php
+  ./admin/app/vues/categories/index.php
   Variables disponibles:
     - $categories ARRAY(ARRAY(id, namen created_at))
  */
@@ -30,8 +30,8 @@
          <td><?php echo $categorie['created_at']; ?></td>
          <td>
            <!-- On met une class pour pouvoir faire une confirmation avec le fichier public/www/js/app.js -->
-           <a href="categories/edit/<?php echo $categorie['id']; ?>"    class="edit">Edit</a> | <!-- Besoin d'un id pour savoir lequel editer -->
-           <a href="categories/delete/<?php echo $categorie['id']; ?>"  class="delete">Delete</a> <!-- Besoin d'un id pour savoir lequel supprimer -->
+           <a href="categories/edit/form/<?php echo $categorie['id']; ?>" class="edit">Edit</a> | <!-- Besoin d'un id pour savoir lequel editer -->
+           <a href="categories/delete/<?php echo $categorie['id']; ?>"    class="delete">Delete</a> <!-- Besoin d'un id pour savoir lequel supprimer -->
          </td>
        </tr>
      <?php endforeach; ?>

@@ -17,6 +17,7 @@
      CategoriesControleur\indexAction($connexion);
      break;
 
+
      case 'addForm':
      // AJOUT CATEGORIE : FORMULAIRE
      // PATTERN: index.php?categories=addForm
@@ -24,6 +25,7 @@
      // ACTION: addForm
        CategoriesControleur\addFormAction($connexion);
        break;
+
 
        case 'add':
        // AJOUT CATEGORIE : INSERT - Pour le slug
@@ -35,6 +37,7 @@
          ]);
          break;
 
+
          case 'delete':
          // SUPPRESION CATEGORIE
          // PATTERN: index.php?categories=delete&id=x
@@ -42,4 +45,26 @@
          // ACTION: delete
            CategoriesControleur\deleteAction($connexion, $_GET['id']);
            break;
+
+
+           case 'editForm':
+           // MODIFICATION D'UNE CATEGORIE: FORMULAIRE (on va sur le formulaire de modification)
+           // PATTERN: index.php?categories=editForm&id=x
+           // CTRL: catgeoriesControleur
+           // ACTION: editForm
+             CategoriesControleur\editFormAction($connexion, $_GET['id']);
+             break;
+
+
+             case 'edit':
+             // MODIFICATION D'UNE CATEGORIE: UPDATE (on envois la modification vers le formulaire général)
+             // PATTERN: index.php?categories=edit&id=x
+             // CTRL: catgeoriesControleur
+             // ACTION: edit
+               CategoriesControleur\editAction($connexion,[ // On envois ces données vers editAction
+                 'id'    => $_GET['id'], // On a construit notre $_GET['id'] dans le htaccess
+                 'name'  => $_POST['name'] // POST => Envoyé par le formulaire
+               ]);
+               break;
+
 }
