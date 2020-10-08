@@ -15,8 +15,21 @@ RewriteEngine on
 #--------------------------------------------------
 
 #--------------------------------------------------
+# ROUTES DES POSTS
+#--------------------------------------------------
+
+    # LISTE DES POSTS
+    # PATTERN: posts
+    # VERS: index.php?posts
+    RewriteRule ^posts$ index.php?posts [L]
+
+
+
+
+#--------------------------------------------------
 # ROUTES DES CATEGORIES
 #--------------------------------------------------
+
     # LISTE DES CATEGORIES
     # PATTERN: categories
     # VERS: index.php?categories=index

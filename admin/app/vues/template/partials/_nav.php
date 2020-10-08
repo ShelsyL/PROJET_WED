@@ -21,21 +21,29 @@
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Gestion <span class="caret"></span></a>
           <ul class="dropdown-menu">
+
+            <!-- CATEORIES -->
             <li class="dropdown-header">Categéories</li>
             <li><a href="categories">Liste des catégories</a></li>
             <li><a href="categories/add/form">Ajouter une catégorie</a></li>
             <li role="separator" class="divider"></li>
+
+            <!-- TAGS -->
             <li class="dropdown-header">Tags</li>
             <li><a href="#">Liste des tags</a></li>
             <li><a href="#">Ajouter un tag</a></li>
             <li role="separator" class="divider"></li>
+
+            <!-- AUTHORS -->
             <li class="dropdown-header">Authors</li>
             <li><a href="#">Liste des authors</a></li>
             <li><a href="#">Ajouter un author</a></li>
             <li role="separator" class="divider"></li>
+
+            <!-- POST -->
             <li class="dropdown-header">Posts</li>
-            <li><a href="#">Liste des posts</a></li>
-            <li><a href="#">Ajouter un post</a></li>
+            <li><a href="posts">Liste des posts</a></li>
+            <li><a href="posts/add">Ajouter un post</a></li>
           </ul>
         </li>
         <li><a href="user/logout">Logout</a></li>
