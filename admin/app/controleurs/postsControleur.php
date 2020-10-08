@@ -16,3 +16,20 @@
        include '../app/vues/posts/index.php';
      $content = ob_get_clean();
  }
+
+  function addFormAction(\PDO $connexion) {
+    // Je vais chercher la liste des auteurs
+    include_once '../app/modeles/auteursModele.php';
+    $authors = \App\Modeles\AuteursModele\findAll($connexion);
+    // Je vais chercher la liste des catégories
+    include_once '../app/modeles/categoriesModele.php';
+    $categories = \App\Modeles\CategoriesModele\findAll($connexion);
+
+    // Je charge la vue addForm (le formulaire) dans $content
+    GLOBAL $content, $title;
+    $title = "Ajout d'un post";
+    ob_start();
+      include '../app/vues/posts/addForm.php';
+    $content = ob_get_clean();
+
+  }

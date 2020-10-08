@@ -28,7 +28,7 @@
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: left;
-  background-color: #4CAF50;
+  background-color: #708090;
   color: white;
 }
 h1 {
@@ -36,10 +36,9 @@ h1 {
 }
 </style>
 </head>
-<body>
 
 <h1 ><?php echo $title ?></h1>
-<div><a href="posts/add">Ajouter un post</a></div>
+<div><a href="posts/add/form" style="">Ajouter un post</a></div>
 
 <table id="customers">
   <thead>
@@ -50,6 +49,7 @@ h1 {
       <th>Texte</th>
       <th>Media</th>
       <th>Auteur</th>
+      <th>Modifier | Supprimer</th>
     </tr>
   </thead>
   <tbody>
@@ -58,11 +58,11 @@ h1 {
         <td><?php echo $post['id']; ?></td>
         <td><?php echo $post['title']; ?></td>
         <td><?php echo $post['created_at']; ?></td>
-        <td><?php echo \Noyau\Fonctions\tronquer($post['content'], 100); ?></td>
-        <td><img src="<?php echo $post['image']; ?>" alt="" width="50"></td>
+        <td><?php echo \Noyau\Fonctions\tronquer($post['content'], 50); ?></td>
+        <td><img src="<?php echo $post['image']; ?>" alt="" style="width: 50;"></td>
         <td><?php echo $post['firstname']; ?> <?php echo $post['lastname']; ?></td>
         <td>
-          <a href="#">Edit</a>
+          <a href="#">Edit</a> |
           <a href="#">Delete</a>
         </td>
       </tr>

@@ -23,6 +23,10 @@ RewriteEngine on
     # VERS: index.php?posts
     RewriteRule ^posts$ index.php?posts [L]
 
+    # AJOUT D'UN POST: FORMULAIRE
+    # PATTERN: posts/add/form
+    # VERS: index.php?posts=addForm
+    RewriteRule ^posts\/add\/form$ index.php?posts=addForm [L]
 
 
 

@@ -43,7 +43,7 @@
             <!-- POST -->
             <li class="dropdown-header">Posts</li>
             <li><a href="posts">Liste des posts</a></li>
-            <li><a href="posts/add">Ajouter un post</a></li>
+            <li><a href="posts/add/form">Ajouter un post</a></li>
           </ul>
         </li>
         <li><a href="user/logout">Logout</a></li>
