@@ -15,16 +15,18 @@
 <h1 ><?php echo $title ?></h1>
 <div><a href="posts">Retour vers la liste des posts</a></div>
 
-<form action="" method="post">
+<form action="posts/add/insert" method="post">
   <fieldset>
+
+    <!-- DONEES DU POST -->
     <legend>Données du posts</legend>
     <div>
-      <label for="name">Titre</label>
-      <input type="text" name="titre" id="titre" />
+      <label for="title">Titre</label>
+      <input type="text" name="title" id="title" />
     </div>
     <div>
-      <label for="texte">Texte</label>
-      <textarea name="texte" id="texte"></textarea>
+      <label for="content">Texte</label>
+      <textarea name="content" id="content"></textarea>
     </div>
     <div>
       <label for="media">Media</label>

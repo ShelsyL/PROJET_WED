@@ -18,15 +18,20 @@ RewriteEngine on
 # ROUTES DES POSTS
 #--------------------------------------------------
 
-    # LISTE DES POSTS
+    # LISTE DES POSTS (On arrive sur la liste des posts)
     # PATTERN: posts
     # VERS: index.php?posts
     RewriteRule ^posts$ index.php?posts [L]
 
-    # AJOUT D'UN POST: FORMULAIRE
+    # FORMULAIRE D'AJOUT D'UN POST (On arrive sur le formulaire pour ajouter un post)
     # PATTERN: posts/add/form
     # VERS: index.php?posts=addForm
     RewriteRule ^posts\/add\/form$ index.php?posts=addForm [L]
+
+    # AJOUT D'UN POST: INSERT 
+    # PATTERN: posts/add/insert
+    # VERS: index.php?posts=addInsert
+    RewriteRule ^posts\/add\/insert$ index.php?posts=addInsert [L]
 
 
 
