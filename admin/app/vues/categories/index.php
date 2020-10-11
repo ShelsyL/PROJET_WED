@@ -4,9 +4,10 @@
   Variables disponibles:
     - $categories ARRAY(ARRAY(id, namen created_at))
  */
+
  ?>
  <div class="jumbotron">
-   <h1>Gestion des catégories</h1>
+   <h1><?php echo $title; ?></h1> <!-- Gestion des catégories -->
    <p>This is a template showcasing the optional theme stylesheet included in Bootstrap. Use it as a starting point to create something more unique by building on or modifying it.</p>
  </div>
  <div class="">
@@ -15,7 +16,7 @@
  <table class="table table-striped">
    <thead>
      <tr>
-       <th>#</th>
+       <th>ID</th>
        <th>Name</th>
        <th>Created_at</th>
        <th>Actions</th>

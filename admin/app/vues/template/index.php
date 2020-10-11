@@ -5,14 +5,9 @@
   </head>
 
   <body>
-
     <?php include '../app/vues/template/partials/_nav.php'; ?>
-
-    <div class="container theme-showcase" role="main">
-      <?php echo $content; ?>
-    </div>
+    <?php include '../app/vues/template/partials/_main.php'; ?>
 
     <?php include '../app/vues/template/partials/_scripts.php'; ?>
-
   </body>
 </html>

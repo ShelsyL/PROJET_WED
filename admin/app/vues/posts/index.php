@@ -55,15 +55,15 @@ h1 {
   <tbody>
     <?php foreach ($posts as $post): ?>
       <tr>
-        <td><?php echo $post['id']; ?></td>
+        <td><?php echo $post['postID']; ?></td>
         <td><?php echo $post['title']; ?></td>
         <td><?php echo $post['created_at']; ?></td>
         <td><?php echo \Noyau\Fonctions\tronquer($post['content'], 50); ?></td>
         <td><img src="<?php echo $post['image']; ?>" alt="" style="width: 50;"></td>
         <td><?php echo $post['firstname']; ?> <?php echo $post['lastname']; ?></td>
         <td>
-          <a href="#">Edit</a> |
-          <a href="#">Delete</a>
+          <a href="posts/edit/form/<?php echo $post['postID']; ?>" class="edit">Editer</a> |
+          <a href="posts/delete/<?php echo $post['postID']; ?>" class="delete">Supprimer</a>
         </td>
       </tr>
     <?php endforeach; ?>

@@ -5,6 +5,7 @@
   - $categories ARRAY (id, name, created_at)
  */
 ?>
+
 <h1><?php echo $title; ?></h1>
 <div><a href="categories">Retour sur la liste des catégories</a></div>
 

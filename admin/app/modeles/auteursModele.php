@@ -1,6 +1,7 @@
 <?php
 /*
   ./admin/app/modeles/auteursModele.php
+  Modèle des auteurs
  */
  namespace App\Modeles\AuteursModele;
 
